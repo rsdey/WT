@@ -4,6 +4,7 @@ body {
 	overflow-y: auto;
 	overflow-x:hidden;
     font-family: 'Open Sans', sans-serif; 
+    position: sticky;
 }
 div#header {
 	position:fixed;
@@ -215,7 +216,7 @@ table {
 
 th, td {
   padding: 8px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #ddd;
 }
 tr:nth-child(odd) {background: #FFF}
