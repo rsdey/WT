@@ -2,5 +2,51 @@ body {
 
 	font-size: 16px;
 	font-family: oxygen;
-	background-color:  #f2f2f2;
+	color:white;
+	background-color:  #595959;
 }
+
+
+#header-nav {
+
+	background-color:white;
+	border-radius:0;
+	border:0;
+}
+
+#logo-img {
+
+	background: url('../images/logo.png') no-repeat;
+	width:150px;
+	height:150px;
+	margin:10 px 15px 10 px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 3em;
+  
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
