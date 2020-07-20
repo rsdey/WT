@@ -125,9 +125,7 @@ function addHtmlTableRow() {
     cell8.innerHTML = topic;
     // call the function to set the event to the new row
     selectedRowToInput();
-    document.getElementById("reg").reset();
-    document.reg.reset();
-  }
+ 
 }
 
 
