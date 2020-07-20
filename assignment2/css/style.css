@@ -6,6 +6,10 @@ body {
 	background-color:  #595959;
 }
 
+.entry-content label {
+    color: black;
+    font-size: 12px;
+}
 
 #header-nav {
 
@@ -183,5 +187,4 @@ body {
   margin-top: 25px;
 }
 /* END FOOTER */
-
 
