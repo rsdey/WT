@@ -128,6 +128,6 @@ function addHtmlTableRow() {
  
 }
 
-
+};
  
 
