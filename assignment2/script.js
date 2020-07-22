@@ -72,6 +72,10 @@ function validation() {
   } else if (topic === "") {
     alert("Topic cannot be empty");
     valid = false;
+  } else if  (!(document.getElementById('male').checked) && !(document.getElementById('female').checked) && !(document.getElementById('other').checked)) {
+    alert("Select a Gender .")
+    valid=false;
+
   }
 
 
@@ -124,9 +128,12 @@ function addHtmlTableRow() {
     cell7.innerHTML = cat;
     cell8.innerHTML = topic;
     // call the function to set the event to the new row
+    document.getElementById("reg").reset();
     selectedRowToInput();
+    document.getElementById("reg").reset();
  
 }
+
 
 };
  
