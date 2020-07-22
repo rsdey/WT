@@ -4,6 +4,7 @@ body {
 	font-family: oxygen;
 	color:white;
 	background-color:  #595959;
+  overflow-x:hidden;
 }
 
 .entry-content label {
