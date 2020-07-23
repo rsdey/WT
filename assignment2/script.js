@@ -1,7 +1,7 @@
 function regsitrat() {
   var x = document.getElementById("register");
   var y = document.getElementById("tabless");
-  var z = document.getElementById("myCarousel");
+  var z = document.getElementById("myCarousel");    //to display only form
     
     x.style.display = "block";
     y.style.display = "none";
@@ -12,22 +12,22 @@ function regsitrat() {
 function regsitrations() {
   var a = document.getElementById("tabless");
   var b = document.getElementById("register");
-  var c = document.getElementById("myCarousel");
+  var c = document.getElementById("myCarousel");     //to display only table
 
    a.style.display = "block";
    b.style.display = "none";
     c .style.display = "none";
 }
-  var rIndex,
+ 
   table = document.getElementById("table");
 
  var today = new Date();
  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
- var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+ var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();   //calculate current date and time
  var dateTime = date+' '+time;
 
 
-function validation() {
+function validation() {                                     //validation of form and to check empty fields 
   var valid= true,
     name = document.getElementById("name").value,
     eid = document.getElementById("eid").value,
@@ -83,12 +83,12 @@ function validation() {
 }
 
 
-function addHtmlTableRow() {
+function addHtmlTableRow() {                              //if found valid, add into table
   
   var table = document.getElementById("table");
   if (validation()) {
     alert("Form Submitted :)")
-    var newRow = table.insertRow(table.length),
+    var newRow = table.insertRow(table.length),           //create new row for all the fields
       cell1 = newRow.insertCell(0),
       cell2 = newRow.insertCell(1),
       cell3 = newRow.insertCell(2),
@@ -119,7 +119,7 @@ function addHtmlTableRow() {
     g = document.getElementById('other').value;
   }
 
-    cell1.innerHTML = dateTime;
+    cell1.innerHTML = dateTime;                                 //insert inputs into cells
     cell2.innerHTML = name;
     cell3.innerHTML = eid;
     cell4.innerHTML = g;
@@ -127,10 +127,10 @@ function addHtmlTableRow() {
     cell6.innerHTML = iid;
     cell7.innerHTML = cat;
     cell8.innerHTML = topic;
-    // call the function to set the event to the new row
+    
     document.getElementById("reg").reset();
-    selectedRowToInput();
-    document.getElementById("reg").reset();
+    selectedRowToInput();                                       // call the function to set the event to the new row
+    document.getElementById("reg").reset();                     //reset form after submission 
  
 }
 
