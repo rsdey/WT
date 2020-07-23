@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PRN</title>
+	
+</head>
+<body>
+
+
+<script>
+function prn() {
+  var time = new Date().getFullYear()
+  var p1=time%100;
+
+  var br=["IT","CS","ET","EL","ME","CH","CV"];
+  var p2=br[Math.floor(Math.random() * br.length)];
+  var ba=Math.floor(Math.random() *(10-1)+1 )
+  p3="0"+ba
+
+   
+ 
+    var p4=Math.floor(Math.random() *1000 )
+
+    if (p4<10){
+    p4="000"+p4;
+    }else if (p4<100){
+    p4="00"+p4;
+    }else if (p4<1000){
+    p4="0"+p4;
+    }	
+
+    var prn=p1+p2+p3+p4;
+    document.getElementById("p4").innerHTML = prn;
+
+    console.log(p1)
+    console.log(p2)
+    console.log(p3)
+    console.log(p4)
+    
+ };
+  
+
+</script>
+
+<center>
+<h1 id="p4">Click to generate PRN</h1>
+<button onclick="prn()" style="font-size: 2em;"> Click Here</button>
+</center>
+
+</body>
+</html>
