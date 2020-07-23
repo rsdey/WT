@@ -13,10 +13,11 @@ function regsitrations() {
   var a = document.getElementById("tabless");
   var b = document.getElementById("register");
   var c = document.getElementById("myCarousel");     //to display only table
-
+  
    a.style.display = "block";
    b.style.display = "none";
-    c .style.display = "none";
+   c .style.display = "none";
+ 
 }
  
   table = document.getElementById("table");
@@ -84,6 +85,9 @@ function validation() {                                     //validation of form
 
 
 function addHtmlTableRow() {                              //if found valid, add into table
+
+  var n = document.getElementById("nd");     
+  n.style.display = "none";
   
   var table = document.getElementById("table");
   if (validation()) {
@@ -131,6 +135,11 @@ function addHtmlTableRow() {                              //if found valid, add 
     document.getElementById("reg").reset();
     selectedRowToInput();                                       // call the function to set the event to the new row
     document.getElementById("reg").reset();                     //reset form after submission 
+
+    
+
+
+
  
 }
 
