@@ -26,7 +26,7 @@ function regsitrations() {
  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
  var dateTime = date+' '+time;
 
-// check the empty input
+
 function validation() {
   var valid= true,
     name = document.getElementById("name").value,
