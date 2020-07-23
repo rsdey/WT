@@ -81,14 +81,12 @@ function validation() {                                     //validation of form
 
 
   return valid;
-}
+};
 
 
 function addHtmlTableRow() {                              //if found valid, add into table
 
-  var n = document.getElementById("nd");     
-  n.style.display = "none";
-  
+
   var table = document.getElementById("table");
   if (validation()) {
     alert("Form Submitted :)")
