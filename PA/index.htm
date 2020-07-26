@@ -42,9 +42,10 @@
           <option value="10">10</option>
           
         </select>
-<br><br><button onclick="buttonClick();">Click Me</button>
+<br><br>
 
-
+<button onclick="submit();">Submit</button>
+<button onclick="prn();">Generate</button>
 
 
 	<script>
@@ -52,7 +53,7 @@
 	
 
     var i = 0;
-    function buttonClick() {
+    function prn() {
         i++;
         var p4=i;
         if(p4<10){
@@ -79,18 +80,16 @@
 
     	var prn=p1+p2+p3+p4
 
-
-
-
-
-
-
         document.getElementById('prn').innerHTML =prn;
 
         console.log(p1)
         console.log(p4)
         }
        
+       function submit(){
+
+       	alert("Details Submitted")
+       }
     
 </script>
 
