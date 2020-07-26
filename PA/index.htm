@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+<h1 id="prn">Click To Generate PRN</h1>
+<label for="year">Select Admission Year :</label>
+<select  name="year" id="year">
+          <option value="17">2017</option>
+          <option value="18">2018</option>
+          <option value="19">2019</option>
+          <option value="20">2020</option>
+        </select>
+
+
+<label for="branch">Select Branch :</label>
+<select  name="branch" id="branch">
+          <option value="IT">Information Technology</option>
+          <option value="CS">Computer Science</option>
+          <option value="ME">Mechanical</option>
+          <option value="CV">Civil</option>
+          <option value="CH">Chemical</option>
+          <option value="EL">Electronics</option>
+          <option value="EX">electrical and Tele Communications</option>
+        </select>
+
+ <label for="batch">Select Batch :</label>
+<select  name="batch" id="batch">
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+          <option value="04">4</option>
+          <option value="05">5</option>
+          <option value="06">6</option>
+          <option value="07">7</option>
+          <option value="08">8</option>
+          <option value="09">9</option>
+          <option value="10">10</option>
+          
+        </select>
+<br><br><button onclick="buttonClick();">Click Me</button>
+
+
+
+
+	<script>
+
+	
+
+    var i = 0;
+    function buttonClick() {
+        i++;
+        var p4=i;
+        if(p4<10){
+        p4="000"+p4
+    	}else if(p4<100){
+    	p4="00"+p4	
+    	}else if(p4<1000){
+    	p4="0"+p4	
+    	}
+
+    	var y = document.getElementById("year");
+    	var p1 = y.options[y.selectedIndex].text;
+        p1=p1%100;
+
+
+        var b = document.getElementById("branch");
+   		var p2 = b.options[b.selectedIndex].value;
+
+   		var ba = document.getElementById("batch");
+   		var p3 = ba.options[ba.selectedIndex].value;
+
+
+
+
+    	var prn=p1+p2+p3+p4
+
+
+
+
+
+
+
+        document.getElementById('prn').innerHTML =prn;
+
+        console.log(p1)
+        console.log(p4)
+        }
+       
+    
+</script>
+
+
+</body>
+</html>
