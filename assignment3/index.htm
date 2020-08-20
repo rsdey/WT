@@ -1,51 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>PRN</title>
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Suzenn</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+
 </head>
 <body>
-
-
-<script>
-function prn() {
-  var time = new Date().getFullYear()
-  var p1=time%100;
-
-  var br=["IT","CS","ET","EL","ME","CH","CV"];
-  var p2=br[Math.floor(Math.random() * br.length)];
-  var ba=Math.floor(Math.random() *(10-1)+1 )
-  p3="0"+ba
-
-   
- 
-    var p4=Math.floor(Math.random() *1000 )
-
-    if (p4<10){
-    p4="000"+p4;
-    }else if (p4<100){
-    p4="00"+p4;
-    }else if (p4<1000){
-    p4="0"+p4;
-    }	
-
-    var prn=p1+p2+p3+p4;
-    document.getElementById("prnno").innerHTML = prn;
-
-    console.log(p1)
-    console.log(p2)
-    console.log(p3)
-    console.log(p4)
+    <script src="script.js"></script>
+    <h1>My Restaurant</h1>
     
- };
-  
+    
 
-</script>
+    <label>Choose an item :</label>
+    <select class="menu" name="menu" id="menu" style="color: black" >
+          
+        </select><br><br><br>
 
-<center>
-<h1 id="prnno">Click to generate PRN</h1>
-<button onclick="prn()" style="font-size: 2em;"> Click Here</button>
-</center>
+    
+    Short Name : <span id="short_name"></span><br>
+    Name : <span id="name"></span><br>
+    Description: <span id="description"></span><br>
+    Price for small: <span id="price_small"></span><br>
+    Price for large: <span id="price_large"></span><br>
+    Name of small portion: <span id="small_portion_name"></span><br>
+    Name of large portion: <span id="large_portion_name"></span><br>
 
+    
+    
 </body>
 </html>
