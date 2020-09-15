@@ -81,19 +81,17 @@ function validation() {                                     //validation of form
 
 
   return valid;
-};
 
 
 
-    
-    document.getElementById("reg").reset();
-    selectedRowToInput();                                       // call the function to set the event to the new row
-    document.getElementById("reg").reset();                     //reset form after submission 
 
-    
 
 
 
  
 
+
+
+};
+ 
 
